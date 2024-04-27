@@ -14,32 +14,6 @@ known_face_names = []
 
 video_capture = cv2.VideoCapture(0)
 
-# person1_image = face_recognition.load_image_file("Training_Photos/person1")
-# person1_encoding = face_recognition.face_encodings(person1_image)[0]
-
-# person2_image = face_recognition.load_image_file("Training_Photos/person2")
-# person2_encoding = face_recognition.face_encodings(person2_image)[0]
-
-# person3_image = face_recognition.load_image_file("Training_Photos/person3")
-# person3_encoding = face_recognition.face_encodings(person3_image)[0]
-
-# person4_image = face_recognition.load_image_file("Training_Photos/person4")
-# person4_encoding = face_recognition.face_encodings(person4_image)[0]
-
-# known_face_encoding = [
-#     person1_encoding,
-#     person2_encoding,
-#     person3_encoding,
-#     person4_encoding
-# ]
-
-# known_face_names = [
-#     "person1",
-#     "person2",
-#     "person3",
-#     "person4"
-# ]
-
 # Iterate over each file in the training directory
 for file_name in os.listdir(training_dir):
     # Check if the file is an image (you may want to add more checks here)
